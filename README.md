@@ -1,37 +1,98 @@
-# BLOODBOUND
+<div align="center">
 
-**A dark-fantasy magic mod concept for Blade & Sorcery: Nomad**
+# 🩸 BLOODBOUND
 
-BLOODBOUND is a planned gesture-based magic expansion built around supernatural crimson liquid effects. The first milestone is a polished Blood Drain prototype with a hand-following liquid stream and a temporary swirling forearm aura.
+### THE FORBIDDEN ART OF BLOOD
 
-> **Development status:** Design and repository setup. This repository does not yet contain a working, installable game mod. No gameplay features have been tested in Nomad.
+*A dark-fantasy, gesture-driven magic concept for* **Blade & Sorcery: Nomad**
 
-## Planned spells
+**Crimson flows. Shadows answer. Magic obeys.**
 
-- **Blood Drain** — hold the spell input and point at a valid NPC; a stylized crimson liquid effect connects the target to the caster's hand. The energy gathers into a temporary swirling forearm aura.
-- **Blood Orb** — form stored energy into a floating orb.
-- **Blood Infusion** — coat a held weapon in a crimson magical effect.
-- **Blood Barrier** — form a defensive magical barrier.
-- **Blood Tendrils** — create animated liquid-like magical extensions.
+[Project](#-the-project) · [Spellbook](#-the-spellbook) · [Roadmap](#-development-status) · [Documentation](#-project-documents)
 
-## Target platform
+</div>
 
-- Game: Blade & Sorcery: Nomad
-- Platform: Meta Quest
-- Target game version: latest version at time of implementation; exact version must be recorded during testing.
+---
 
-## Important technical note
+> [!IMPORTANT]
+> **Early development — documentation and design foundation only.** This repository does not yet contain a playable, installable, or Quest-tested mod. Spell descriptions below are design goals, not implemented features.
 
-Nomad mod support and available APIs differ from the PCVR version. Before implementation, verify the current Nomad SDK/modding workflow, supported scripting or asset formats, and game-version compatibility against current official documentation. Do not assume that Unity Editor, PCVR scripts, VFX Graph, or arbitrary JSON files can run directly on Quest.
+## 🕯️ The project
 
-## Repository map
+BLOODBOUND is planned as a dark-fantasy magic expansion built around **smooth, liquid-like crimson energy** and physical spell gestures.
 
-- `DEVELOPMENT.md` — setup and implementation plan
-- `SPELL_DESIGN.md` — spell behavior and visual direction
-- `TESTING.md` — compatibility and performance checklist
-- `manifest/` — reserved for verified mod metadata once the correct format is confirmed
-- `Assets/` — reserved for compatible, optimized assets
+The signature experience is **Blood Drain**: hold the spell input and point toward a valid NPC. A supernatural crimson stream is intended to flow toward the caster's palm while a ribbon-like aura circles the forearm. Releasing the input ends the stream; the remaining aura fades away.
 
-## Contribution and safety
+The visual direction is elegant and ominous—not a storm of generic particles.
 
-All effects are intended to be stylized fantasy magic, not realistic injury simulation. Do not add copyrighted assets without permission.
+## 📖 The spellbook
+
+| Spell | Gesture concept | Intended effect |
+|:--|:--|:--|
+| **I · Blood Drain** | Hold input and point | A flowing crimson stream and temporary forearm aura |
+| **II · Blood Orb** | Cup the palm upward | Gather stored energy into a floating orb |
+| **III · Blood Infusion** | Grip a weapon and cast | Wrap a held weapon in crimson magic |
+| **IV · Blood Barrier** | Extend both hands | Form a defensive magical barrier |
+| **V · Blood Tendrils** | Spread the fingers | Extend flowing magical ribbons from the hand |
+
+Gesture recognition and all gameplay interactions must use inputs and APIs verified for the current Nomad modding framework. If a gesture is not supported, an accessible controller-input alternative will be needed.
+
+## 🎨 Visual identity
+
+- **Palette:** near-black, deep wine, dark crimson, restrained ember-red highlights.
+- **Motion:** continuous flow, curling ribbons, ripples and subtle splashes.
+- **Materials:** glossy supernatural liquid with controlled transparency.
+- **Casting feel:** deliberate, weighty, responsive and readable in VR.
+- **Performance:** designed around Quest hardware limits; avoid expensive effects and excessive transparent overdraw.
+
+See [BRAND_GUIDE.md](BRAND_GUIDE.md) for the visual direction.
+
+## 🧭 Development status
+
+| Milestone | Status |
+|:--|:--|
+| Project concept and spell list | 🟢 Documented |
+| Visual direction | 🟢 Documented |
+| Verify current Nomad toolchain and APIs | 🟡 Not started |
+| Blood Drain visual prototype | ⚪ Not started |
+| Gesture/input implementation | ⚪ Not started |
+| Additional spells | ⚪ Not started |
+| Quest performance testing | ⚪ Not started |
+| mod.io packaging and release | ⚪ Not started |
+
+**First playable milestone:** Blood Drain's liquid stream and hand-following forearm aura, tested on actual Quest hardware.
+
+## 🗂️ Project documents
+
+- [Development plan](DEVELOPMENT.md) — technical phases and constraints
+- [Spell design](SPELL_DESIGN.md) — behavior and visual goals
+- [Testing checklist](TESTING.md) — compatibility and release checks
+- [Brand guide](BRAND_GUIDE.md) — palette, effects and presentation
+- [Changelog](CHANGELOG.md) — project history
+- [Contributing](CONTRIBUTING.md) — project contribution guidelines
+
+## ⚙️ Target platform
+
+- **Game:** Blade & Sorcery: Nomad
+- **Device family:** Meta Quest
+- **Game version:** to be recorded when implementation and testing begin
+
+Nomad and PCVR have different technical constraints. The current official Nomad documentation must be checked before choosing a project template, asset format, scripting approach, or package structure. PCVR-only instructions, Unity features, and arbitrary configuration files must not be assumed to work on Quest.
+
+## 🤝 Project principles
+
+1. Build one feature at a time and test it in-game.
+2. Prefer polished, readable effects over visual clutter.
+3. Keep Quest performance and VR comfort in mind.
+4. Clearly label prototypes, untested code, and known limitations.
+5. Use original or properly licensed assets only.
+
+---
+
+<div align="center">
+
+**BLOODBOUND** · *A spell is a promise. A gesture is its price.*
+
+<sub>Independent fan-made project. Not affiliated with or endorsed by Warpfrog or mod.io.</sub>
+
+</div>
